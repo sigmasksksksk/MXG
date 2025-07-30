@@ -2,72 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MMG Oracle Interface</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMG Ritual Tools</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>🔮 MMG Oracle | Asset Ritual Panel</h1>
-    <p class="subtitle">Select a glyph and begin extraction.</p>
-    <p class="lang-note">Language: English | Ritual Layer: MMG v3.1</p>
+    <h1>🧙 MMG Ritual Forge</h1>
+    <p>Create, protect, and summon your branded EXEs with glyphal precision.</p>
   </header>
 
-  <main>
-    <section class="hex-panel">
-      <div class="hex-line">0x0000: 48 65 78 20 52 69 74 75 61 6C</div>
-      <div class="hex-line">0x0010: 54 6F 6F 6C 20 49 4E 46 4F 00</div>
-    </section>
+  <section id="features">
+    <ul>
+      <li>Branded installers for MMG tools</li>
+      <li>Desktop shortcuts woven with myth</li>
+      <li>Obfuscation layers embedded deep</li>
+      <li>Loadout JSON autogeneration (coming soon)</li>
+    </ul>
+  </section>
 
-    <section class="warning">
-      ⚠️ Some glyphs may trigger unstable rituals. Verify hashes before extraction.
-    </section>
-
-    <section class="artifact-table-wrapper">
-      <table class="artifact-table">
-        <tr>
-          <th>Tool</th>
-          <th>Version</th>
-          <th>Release</th>
-          <th>Size</th>
-          <th>SHA-1</th>
-          <th>Download</th>
-        </tr>
-        <tr>
-          <td>MMG Oracle</td>
-          <td>v3.1</td>
-          <td>2025-07-29</td>
-          <td>4.4 MB</td>
-          <td>ae23c1d7...d62a8</td>
-          <td><a href="https://github.com/sigmasksksksk/MXG/raw/main/MXGInstaller.exe" download>💿 Installer .exe</a></td>
-        </tr>
-        <tr>
-          <td>Metadata Editor</td>
-          <td>v1.5</td>
-          <td>2025-07-28</td>
-          <td>2.2 MB</td>
-          <td>c7d8b991...ac001</td>
-          <td><a href="https://github.com/sigmasksksksk/MXG/raw/main/Metadata%20Editor.zip" download>🗂️ Editor .zip</a></td>
-        </tr>
-        <tr>
-          <td>Hex Editor</td>
-          <td>v0.9</td>
-          <td>2025-07-27</td>
-          <td>3.1 MB</td>
-          <td>f23a701d...9e77d</td>
-          <td><a href="https://github.com/sigmasksksksk/MXG/raw/main/mmg_hex_editor.exe" download>🐅 Editor .exe</a></td>
-        </tr>
-      </table>
-    </section>
-
-    <section class="future-notes">
-      <p>🔧 Portable Editions & Hash Verifiers coming soon</p>
-      <p>🧿 Glyph recognition AI stub active — awaiting MMG Oracle v4.0 drop</p>
-    </section>
-  </main>
+  <section id="downloads">
+    <button onclick="downloadFile('assets/MXGInstaller.exe')">Download MXG Ritual Engine</button>
+    <button onclick="downloadFile('assets/OtherTool.exe')">Download MMG Splash Launcher</button>
+  </section>
 
   <footer>
-    <p class="credit">© 2025 MMG: Moses Modding Grounds | Ritual Engine: Red Tiger</p>
+    <p>© 2025 MMG Forge by Jordan. All tools bound with glyphs and mythos.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
