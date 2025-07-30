@@ -1,46 +1,67 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #1b1b1b;
-  color: #e0e0e0;
-  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffe3d2;
+  color: #3a2a1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-header {
-  background-color: #292929;
-  padding: 1.5em;
-  border-bottom: 2px solid #444;
+.container {
+  text-align: center;
+  max-width: 600px;
+  padding: 40px 20px;
 }
 
 h1 {
-  margin: 0;
-  font-size: 2.5em;
-  color: #ffc857;
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
 }
 
-section {
-  margin: 2em 0;
+.subtitle {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.features {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.features li {
+  margin: 0.5rem 0;
+}
+
+.visits {
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 button {
-  padding: 0.7em 1.5em;
-  margin: 1em;
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 12px;
   border: none;
-  background-color: #ffc857;
-  color: #1b1b1b;
-  font-size: 1em;
+  border-radius: 12px;
+  background: #f5d6c6;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: #ffab40;
+  background: #ffd6bd;
 }
 
 footer {
-  margin-top: 2em;
-  padding: 1em;
-  background-color: #222;
-  font-size: 0.9em;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #6d4b3c;
 }
