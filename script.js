@@ -1,8 +1,18 @@
-function downloadFile(filePath) {
-  const link = document.createElement('a');
-  link.href = filePath;
-  link.download = filePath.split('/').pop();
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+// Visit counter using localStorage (demo only)
+document.addEventListener('DOMContentLoaded', () => {
+  const countElement = document.getElementById('visit-count');
+  let count = parseInt(localStorage.getItem('visitCount') || '0');
+  count += 1;
+  localStorage.setItem('visitCount', count);
+  countElement.textContent = count;
+});
+
+function downloadFile(url) {
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = '';
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
 }
