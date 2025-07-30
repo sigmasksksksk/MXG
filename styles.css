@@ -1,102 +1,46 @@
 body {
-  background-color: #0e0e0f;
-  color: #e5e5e5;
-  font-family: 'Courier New', monospace;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #1b1b1b;
+  color: #e0e0e0;
+  text-align: center;
 }
 
 header {
-  background-color: #18181a;
-  text-align: center;
-  padding: 20px;
-  border-bottom: 2px dashed #ff2b6d;
+  background-color: #292929;
+  padding: 1.5em;
+  border-bottom: 2px solid #444;
 }
 
 h1 {
-  font-size: 2rem;
-  color: #ff2b6d;
-  text-shadow: 0 0 6px #ff2b6d;
+  margin: 0;
+  font-size: 2.5em;
+  color: #ffc857;
 }
 
-.subtitle, .lang-note, .warning, .credit {
-  font-size: 0.9rem;
-  color: #aaa;
-  text-align: center;
+section {
+  margin: 2em 0;
 }
 
-.hex-panel {
-  background-color: #1e1e20;
-  padding: 15px;
-  margin: 20px auto;
-  width: 80%;
-  border: 1px solid #444;
-  font-family: monospace;
-  font-size: 0.95rem;
-  line-height: 1.5;
+button {
+  padding: 0.7em 1.5em;
+  margin: 1em;
+  border: none;
+  background-color: #ffc857;
+  color: #1b1b1b;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.hex-line {
-  color: #ffd561;
-}
-
-.warning {
-  color: #ffb347;
-  font-weight: bold;
-  margin: 10px auto;
-  text-align: center;
-}
-
-.artifact-table-wrapper {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.artifact-table {
-  width: 90%;
-  border-collapse: collapse;
-  background-color: #121212;
-  box-shadow: 0 0 10px #111;
-}
-
-.artifact-table th, .artifact-table td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #333;
-}
-
-.artifact-table th {
-  color: #ff2b6d;
-  border-bottom: 2px solid #ff2b6d;
-}
-
-.artifact-table td a {
-  background-color: #2a2a2d;
-  color: #ffeced;
-  padding: 6px 10px;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: 0.3s ease-in-out;
-}
-
-.artifact-table td a:hover {
-  background-color: #ff2b6d;
-  color: #0e0e0f;
-  box-shadow: 0 0 8px #ff2b6d;
-}
-
-.future-notes {
-  font-size: 0.8rem;
-  color: #888;
-  text-align: center;
-  padding: 10px;
+button:hover {
+  background-color: #ffab40;
 }
 
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #18181a;
-  color: #777;
-  border-top: 1px solid #333;
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #222;
+  font-size: 0.9em;
 }
